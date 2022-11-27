@@ -1,22 +1,11 @@
-class Student2{
-  String name;
-  int engScore;
-  int mathScore;
+public class Student2 extends Person2{
+  private int stuNo;
 
-  void setData(String n){
-    name = n;
+  public void setStuNo(int s){
+    stuNo = s;
   }
-  void setData(String n, int e, int m){
-    name = n;
-    engScore = e;
-    mathScore = m;
-  }
-  void setScore(int e, int m){
-    engScore = e;
-    mathScore = m;
-  }
-  void display(){
-    System.out.println(name + "さん");
-    System.out.println("英語" + engScore + "点・数学" + mathScore + "点");
+  public void display(){
+    System.out.println("名前：" + getName());
+    System.out.println("学籍番号：" + stuNo);
   }
 }
